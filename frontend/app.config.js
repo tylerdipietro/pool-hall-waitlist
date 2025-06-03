@@ -1,14 +1,20 @@
 export default {
   expo: {
-    name: "Pool Hall Waitlist",
+    name: "pool-hall-waitlist",
     slug: "pool-hall-waitlist",
     version: "1.0.0",
+    sdkVersion: "50.0.0",
     platforms: ["ios", "android", "web"],
-    web: {
-      bundler: "metro",
-    },
     extra: {
-      apiBaseUrl: process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000',
+      eas: {
+        projectId: "aa45cd69-a930-432f-a3ab-77a197e338b6"
+      }
     },
-  },
+    updates: {
+      url: "https://u.expo.dev/aa45cd69-a930-432f-a3ab-77a197e338b6"
+    },
+    runtimeVersion: {
+      policy: "appVersion"
+    }
+  }
 };
