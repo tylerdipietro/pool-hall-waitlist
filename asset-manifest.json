@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.js": "/pool-hall-waitlist/static/js/main.3c313088.js",
+    "static/js/619.c9d01924.js": "/pool-hall-waitlist/static/js/619.c9d01924.js",
+    "index.html": "/pool-hall-waitlist/index.html",
+    "serve.json": "/pool-hall-waitlist/serve.json",
+    "manifest.json": "/pool-hall-waitlist/manifest.json",
+    "main.3c313088.js.map": "/pool-hall-waitlist/static/js/main.3c313088.js.map",
+    "619.c9d01924.js.map": "/pool-hall-waitlist/static/js/619.c9d01924.js.map"
+  },
+  "entrypoints": [
+    "static/js/619.c9d01924.js",
+    "static/js/main.3c313088.js"
+  ]
+}
