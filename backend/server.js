@@ -24,7 +24,24 @@ const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/poolhall';
 const CLIENT_ORIGIN = process.env.CLIENT_HOME_PAGE_URL || 'http://localhost:19000';
 
 // --- Middleware ---
-app.use(cors({ origin: CLIENT_ORIGIN, credentials: true }));
+const allowedOrigins = [
+  'https://tylerdipietro.github.io',  // Your GitHub Pages domain
+  'http://localhost:3000',            // Local dev
+  'https://pool-hall-waitlist-3b8c64cbf25d.herokuapp.com' // Optional: backend itself
+];
+
+app.use(cors({
+  origin: function(origin, callback){
+    // allow requests with no origin like mobile apps or curl requests
+    if(!origin) return callback(null, true);
+    if(allowedOrigins.indexOf(origin) === -1){
+      const msg = 'The CORS policy for this site does not allow access from the specified Origin.';
+      return callback(new Error(msg), false);
+    }
+    return callback(null, true);
+  },
+  credentials: true
+}));
 app.use(express.json());
 
 app.use(session({

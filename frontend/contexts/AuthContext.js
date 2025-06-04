@@ -1,5 +1,6 @@
 import React, { createContext, useState, useEffect } from 'react';
 import Constants from 'expo-constants';
+const API_BASE_URL = Constants.expoConfig?.extra?.apiBaseUrl || 'http://localhost:3000';
 
 export const AuthContext = createContext();
 
