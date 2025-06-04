@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/pool-hall-waitlist/static/js/main.d494cec3.js",
+    "main.js": "/pool-hall-waitlist/static/js/main.c873cc1b.js",
     "static/js/619.fce66153.js": "/pool-hall-waitlist/static/js/619.fce66153.js",
     "index.html": "/pool-hall-waitlist/index.html",
     "serve.json": "/pool-hall-waitlist/serve.json",
     "manifest.json": "/pool-hall-waitlist/manifest.json",
-    "main.d494cec3.js.map": "/pool-hall-waitlist/static/js/main.d494cec3.js.map",
+    "main.c873cc1b.js.map": "/pool-hall-waitlist/static/js/main.c873cc1b.js.map",
     "619.fce66153.js.map": "/pool-hall-waitlist/static/js/619.fce66153.js.map"
   },
   "entrypoints": [
     "static/js/619.fce66153.js",
-    "static/js/main.d494cec3.js"
+    "static/js/main.c873cc1b.js"
   ]
 }
