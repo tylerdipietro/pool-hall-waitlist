@@ -1,4 +1,4 @@
-// backend/server.js
+// backend/server.js updated
 require('dotenv').config();
 const express = require('express');
 const session = require('express-session');
